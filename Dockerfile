@@ -8,7 +8,7 @@ RUN apt-get update \
        unzip \
        wget \
     && apt-get clean \
-    && wget https://github.com/broadinstitute/gatk/releases/download/4.beta.6/gatk-4.beta.6.zip \
-    && unzip gatk-4.beta.6.zip \
-    && mv gatk-4.beta.6/* /usr/local/bin/ \
+    && wget https://github.com/broadinstitute/gatk/releases/download/4.0.0.0/gatk-4.0.0.0.zip \
+    && unzip gatk-4.0.0.0.zip \
+    && mv gatk-4.0.0.0/* /usr/local/bin/ \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
