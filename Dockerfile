@@ -11,4 +11,5 @@ RUN apt-get update \
     && wget https://github.com/broadinstitute/gatk/releases/download/4.0.0.0/gatk-4.0.0.0.zip \
     && unzip gatk-4.0.0.0.zip \
     && mv gatk-4.0.0.0/* /usr/local/bin/ \
+    && rm -rf gatk* \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
