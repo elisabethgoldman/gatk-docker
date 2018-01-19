@@ -4,7 +4,7 @@ MAINTAINER Jeremiah H. Savage <jeremiahsavage@gmail.com>
 
 RUN apt-get update \
     && apt-get install -y \
-       openjdk-9-jre-headless \
+       openjdk-8-jre-headless \
        unzip \
        wget \
     && apt-get clean \
