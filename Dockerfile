@@ -8,8 +8,8 @@ RUN apt-get update \
        unzip \
        wget \
     && apt-get clean \
-    && wget https://github.com/broadinstitute/gatk/releases/download/4.0.2.1/gatk-4.0.2.1.zip \
-    && unzip gatk-4.0.2.1.zip \
-    && mv gatk-4.0.2.1/* /usr/local/bin/ \
+    && wget https://github.com/broadinstitute/gatk/releases/download/4.0.3.0/gatk-4.0.3.0.zip \
+    && unzip gatk-4.0.3.0.zip \
+    && mv gatk-4.0.3.0/* /usr/local/bin/ \
     && rm -rf gatk* \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
