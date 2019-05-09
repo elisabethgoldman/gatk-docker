@@ -3,7 +3,7 @@ FROM ubuntu:bionic-20180426
 MAINTAINER Jeremiah H. Savage <jeremiahsavage@gmail.com>
 
 RUN apt-get update \
-    && apt-get install -y \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y \
        openjdk-8-jre-headless \
        r-base \
        unzip \
