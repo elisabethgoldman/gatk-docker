@@ -2,7 +2,7 @@
 
 MAINTAINER Charles Czysz <czysz@uchicago.edu>
 
-ARG VERSION
+ENV VERSION=4.2.4.1
 
 ENV URL=https://github.com/broadinstitute/gatk/releases/download/${VERSION}/gatk-${VERSION}.zip
 
