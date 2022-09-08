@@ -26,3 +26,5 @@ RUN wget $URL \
 		unzip \
 		wget \
 	&& ls -l /usr/local/bin
+
+ENTRYPOINT ["java", "-jar", "/usr/local/bin/gatk.jar"]
