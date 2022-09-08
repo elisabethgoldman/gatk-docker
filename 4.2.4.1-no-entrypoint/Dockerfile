@@ -1,8 +1,8 @@
-FROM quay.io/ncigdc/bio-ubuntu:20.04 AS builder
+ FROM quay.io/ncigdc/bio-ubuntu:20.04 AS builder
 
 MAINTAINER Charles Czysz <czysz@uchicago.edu>
 
-ARG VERSION
+ENV VERSION=4.2.4.1
 
 ENV URL=https://github.com/broadinstitute/gatk/releases/download/${VERSION}/gatk-${VERSION}.zip
 
@@ -26,5 +26,3 @@ RUN wget $URL \
 		unzip \
 		wget \
 	&& ls -l /usr/local/bin
-
-ENTRYPOINT ["java", "-jar", "/usr/local/bin/gatk.jar"]
