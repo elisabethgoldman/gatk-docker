@@ -1,4 +1,4 @@
-FROM quay.io/ncigdc/base-u20.04-builder:latest AS builder
+ FROM quay.io/ncigdc/bio-ubuntu:20.04 AS builder
 
 MAINTAINER Charles Czysz <czysz@uchicago.edu>
 
