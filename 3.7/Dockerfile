@@ -1,4 +1,4 @@
-FROM quay.io/ncigdc/bio-ubuntu:20.04
+FROM ubuntu:20.04
 
 MAINTAINER Charles Czysz <czysz@uchicago.edu>
 
@@ -7,7 +7,8 @@ LABEL description="GATK3 nightly-2016-02-25-gf39d340"
 
 RUN apt-get update -y \
     && apt-get install -y \
-    openjdk-8-jre-headless
+    openjdk-8-jre-headless \
+    python3.8
 
 COPY GenomeAnalysisTK.jar /usr/local/bin
 
